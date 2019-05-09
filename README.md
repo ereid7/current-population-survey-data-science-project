@@ -14,14 +14,12 @@ http://mlr.cs.umass.edu/ml/datasets/Adult
 
 The 2016 CPS dataset has many columns and many incomplete survey answers, so I edited the to capture the most relevant data. It is important to note that I have stripped the data of any multiple-job holding individuals, so the data only reflects individuals with a single occupation. This updated version of the 2016 CPS dataset is very similar to the UCI adult dataset with some added columns.
 
-The two main response variables that are used in the classification methods are 'is married' and 'family income over $50,000'. One of the most successful method of prediction was Random Forest Decision Tree Classification.
+The two main response variables that are used in the classification methods are 'is married' and 'family income over $50,000'. One of the most successful methods was Random Forest Decision Tree Classification.
 
-Determined if an individual is married with 83% accuracy using predictors:
+Determined if an individual is married with 83% accuracy using the following predictors:
 - age, hours worked weekly, education, number of people in household, number of children under 18, family income
 
-Determined if an individual's family income is greater than $50,000 with 74% accuracy using predictors:
+Determined if an individual's family income is greater than $50,000 with 74% accuracy using the following predictors:
 - age, hours worked weekly, education, number of people in household, number of children under 18, marital status
-
-The highest accuracy was achieved using the tabular_learner neural network from the FastAI library. Using all numerical and categorical columns, I was able to achieve scores above 99% accuracy for predicting 'is married' and 'family income over 50k'
 
 The Current Population Survey (CPS) is administered, processed, researched and disseminated by the U.S. Census Bureau on behalf of the Bureau of Labor Statistics (BLS).
